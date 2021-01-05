@@ -1,0 +1,13 @@
+plugins {
+    id 'kotlin'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'com.atlassian.commonmark:commonmark:0.16.1'
+    implementation 'com.github.spullara.mustache.java:compiler:0.9.7'
+
+    implementation project(':nanoc-kt-core')
+    implementation project(':nanoc-kt-util')
+}

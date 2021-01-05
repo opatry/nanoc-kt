@@ -1,0 +1,102 @@
+text_extensions: [ 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'sass', 'scss', 'txt', 'xhtml', 'xml', 'json' ]
+output_dir: output
+index_filenames: [ 'index.html' ]
+enable_output_diff: true
+prune:
+  auto_prune: true
+  exclude: [ '.git', '.hg', '.svn', 'CVS' ]
+data_sources:
+  - type: filesystem
+    encoding: utf-8
+
+environments:
+  default:
+    dev: true
+    site:
+      url: 'http://localhost:3000' # FIXME not very nice to hardcode port
+      name: '🚧 Marilou &amp; Daphné'
+  prod:
+    dev: false
+    site:
+      url: 'https://famille.opatry.net'
+      name: 'Marilou &amp; Daphné'
+
+# site settings
+site:
+  uuid: 5e0a8bfc-3324-4c52-ae07-0431434e2421
+  author: 'Olivier Patry'
+  lang: 'fr'
+  description: 'Photos des enfants de la famille Patry'
+  theme_color: '#AD3F4C'
+cover: /assets/cover/coverPicture_AllFamilyFeet2020.*
+cover_width: 850
+profilePicture: /assets/cover/profilePicture_MarilouDaphne2020.*
+profilePicture_size: 150
+err404Picture: /assets/cover/AllFamilyFakeMuseum2020.*
+picture_quality: '85%'
+picture_width:
+  excerpt: 400 # width of photos when in an excerpt
+  default: 600 # width of photos by default
+page_size: 20 # number of posts by page
+favicon_reprs: [ 'default' ]
+start_year: 2012
+
+people:
+  Maman:
+    dob: "1984-01-06"
+  Papa:
+    dob: "1985-01-31"
+    picture: "/assets/cover/profilePapa20180806.*"
+  Marilou:
+    dob: "2012-12-10"
+    picture: "/assets/cover/profileMarilou20190811_2.*"
+  Daphné:
+    dob: "2014-08-22"
+    picture: "/assets/cover/profileDaphne20190622.*"
+  Clara:
+    dob: "2011-04-24"
+  Théophile:
+    dob: "2012-12-10"
+  Margaux:
+    dob: "2014-02-08"
+  Lucas:
+    dob: "2014-07-28"
+  Alexandre:
+    dob: "2014-11-05"
+  Agathe:
+    dob: "2011-11-04"
+  Thomas:
+    dob: "2014-02-18"
+  Léonard:
+    dob: "2015-02-23"
+  Charlie:
+    dob: "2015-02-17"
+  Arthur:
+    dob: "2016-11-10"
+  Auguste:
+    dob: "2017-05-16"
+  Louison:
+    dob: "2017-09-15"
+  Elisabeth A:
+    dob: "2018-07-06"
+  Florence:
+    dob: "2015-09-14"
+  Elisabeth E:
+    dob: "2017-11-17"
+
+# script filenames without extension
+scripts:
+  - scrollToProfile
+  - organizeColumns
+  - fadeImages
+
+# stylesheets files without extension
+stylesheets:
+  - boxes
+  - calendar
+  - cover
+  - header
+  - styles
+  - tags
+  - timeline
+  - util
