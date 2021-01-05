@@ -1,0 +1,35 @@
+text_extensions: [ 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'sass', 'scss', 'txt', 'xhtml', 'xml', 'json' ]
+output_dir: output
+index_filenames: [ 'index.html' ]
+enable_output_diff: true
+prune:
+  auto_prune: true
+  exclude: [ '.git', '.hg', '.svn', 'CVS' ]
+data_sources:
+  - type: filesystem
+    encoding: utf-8
+
+environments:
+  default:
+    dev: true
+    site:
+      url: 'http://localhost:3000' # FIXME not very nice to hardcode port
+      name: '🚧 My sample site'
+  prod:
+    dev: false
+    site:
+      url: 'https://acme.org'
+      name: 'My sample site'
+
+# site settings
+site:
+  uuid: 18bf6ffc-dc8f-4805-b7f3-531f54362007
+  author: 'John Doe'
+  lang: 'en'
+  description: 'This is a sample site showcasing NanocKt'
+  theme_color: '#3fad92'
+picture_quality: '85%'
+picture_width:
+  excerpt: 400 # width of photos when in an excerpt
+  default: 600 # width of photos by default
+page_size: 20 # number of posts by page

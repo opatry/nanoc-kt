@@ -1,0 +1,16 @@
+plugins {
+    id 'kotlin'
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
+//    implementation "com.charleskorn.kaml:kaml:$kaml_version"
+//    implementation 'com.amihaiemil.web:eo-yaml:5.1.7'
+    implementation 'com.esotericsoftware.yamlbeans:yamlbeans:1.15'
+
+    implementation 'org.reflections:reflections:0.9.12'
+}

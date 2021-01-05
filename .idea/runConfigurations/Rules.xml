@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Rules" type="JetRunConfigurationType" nameIsGenerated="true">
+    <module name="nanoc-kt.sample-site.main" />
+    <option name="VM_PARAMETERS" value="" />
+    <option name="PROGRAM_PARAMETERS" value="compile" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <option name="MAIN_CLASS_NAME" value="Rules" />
+    <option name="WORKING_DIRECTORY" value="file://$ProjectFileDir$/sample-site/src/main/resources" />
+    <envs>
+      <env name="__FILTER_MODE" value="DEV" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

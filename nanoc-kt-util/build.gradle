@@ -1,0 +1,9 @@
+plugins {
+    id 'kotlin'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation project(':nanoc-kt-core')
+}
