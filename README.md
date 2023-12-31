@@ -17,7 +17,7 @@ This is a Frankenstein clone, meaning:
 ## Motivation
 
 The original motivation was to determine what a Ruby DSL could look like
-as a Kotlin DSL. How could original syntax bei reused almost identically.
+as a Kotlin DSL. How could original syntax be reused almost identically.
 
 A Nanoc website logic mostly resides in the `Rules` file describing how
 to process content (`compile` rules) and where to put the result (`route` rules).
