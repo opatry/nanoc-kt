@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/opatry/nanoc-kt/actions/workflows/Build.yml/badge.svg)](https://github.com/opatry/nanoc-kt/actions/workflows/Build.yml)
+
 # NanocKt
 
 NanocKt is a pedagogical and experimental toy project meant to mimic the
