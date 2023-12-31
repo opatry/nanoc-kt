@@ -1,0 +1,21 @@
+[versions]
+nanocKt = "0.1.0"
+
+kotlin = "1.9.20"
+kotlinx-coroutines = "1.7.3"
+
+[libraries]
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+reflections = "org.reflections:reflections:0.10.2"
+yamlbeans = "com.esotericsoftware.yamlbeans:yamlbeans:1.17"
+commonmark = "com.atlassian.commonmark:commonmark:0.17.0"
+mustache-compiler = "com.github.spullara.mustache.java:compiler:0.9.11"
+
+junit4 = "junit:junit:4.13.2"
+
+[bundles]
+
+[plugins]
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

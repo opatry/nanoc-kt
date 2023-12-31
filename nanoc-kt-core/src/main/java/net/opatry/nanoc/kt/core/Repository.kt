@@ -137,7 +137,8 @@ class Repository(private val rootDir: File) : ContextProvider {
     }
 
     fun <T : Filter> filterWithClass(filterClass: KClass<T>): Filter? {
-        return filters[filterClass]
+        @Suppress("USELESS_CAST")
+        return filters[filterClass as KClass<*>]
     }
 
     fun needsCompilation(item: Item) = !compiled.contains(item)
